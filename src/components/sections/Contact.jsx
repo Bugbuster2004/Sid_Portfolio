@@ -1,12 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
-  position: rlative;
+  justify-content: center;
+  position: relative;
   z-index: 1;
   align-items: center;
 `;
@@ -64,67 +63,27 @@ const ContactTitle = styled.div`
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
 `;
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
-  outline: none;
+const ContactText = styled.div`
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
+  margin-top: 8px;
 `;
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`;
-const ContactButton = styled.input`
+
+const ContactButton = styled.a`
   width: 100%;
   text-decoration: none;
   text-align: center;
   background: hsla(271, 100%, 50%, 1);
   padding: 13px 16px;
-  margin-top: 2px;
+  margin-top: 20px;
   border-radius: 12px;
-  border: none;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  border: none;
 `;
 
 const Contact = () => {
-  const form = useRef();
-  const handelSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
-  };
   return (
     <Container id="Education">
       <Wrapper>
@@ -136,13 +95,13 @@ const Contact = () => {
         >
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
-          <ContactButton type="submit" value="Send" />
+        <ContactForm>
+          <ContactTitle>Contact Me 🚀</ContactTitle>
+          <ContactText>Email: siddhant6338bansal@gmail.com</ContactText>
+          <ContactText>Call: +91 7303294808</ContactText>
+          {/* <ContactButton href="mailto:siddhant6338bansal@gmail.com">
+            Send an Email
+          </ContactButton> */}
         </ContactForm>
       </Wrapper>
     </Container>
