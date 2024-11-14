@@ -1,23 +1,18 @@
-import myImg from "../images/ecomm.png"
-import myImg2 from "../images/conatus.png"
-import myImg3 from "../images/health.png"
-import myImg4 from "../images/gps.png"
-import myImg5 from "../images/lms.png"
-import myImg6 from "../images/conv.png"
+import myImg from "../images/ecomm.png";
+import myImg2 from "../images/conatus.png";
+import myImg3 from "../images/health.png";
+import myImg4 from "../images/gps.png";
+import myImg5 from "../images/lms.png";
+import myImg6 from "../images/conv.png";
 
 export const Bio = {
   name: "Siddhant Bansal",
-  roles: [
-    "Full Stack Developer",
-    "Product Designer",
-    "Data Structures And Algorithms",
-    "Programmer",
-  ],
+  roles: ["Full Stack Developer", "Product Designer", "Programmer"],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Bugbuster2004",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
+    "https://drive.google.com/file/d/10odIwfwMShTJ66ujswCs1DJXnttvD-vr/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/siddhant-bansal-8767b4314/",
   twitter: "",
   insta: "",
@@ -100,7 +95,6 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
-      
     ],
   },
   // {
@@ -265,7 +259,7 @@ export const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
-      "Charts.js"
+      "Charts.js",
     ],
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
@@ -284,7 +278,6 @@ export const experiences = [
       "Figma",
       "Tailwind CSS",
       "Vercel",
-      
     ],
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
   },
@@ -295,10 +288,7 @@ export const experiences = [
     company: "Online Home Tutions, Delhi",
     date: "March 2024 - July 2024",
     desc: "Taught web development to over 1,000 students as a Teaching Intern, with average rating of (4.4/5)",
-    skills: [
-      "Web Development",
-     
-    ],
+    skills: ["Web Development"],
     // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
   // {
@@ -403,8 +393,7 @@ export const projects = [
     date: "June 2024 ",
     description:
       "Wonder is an EdTech platform dedicated to enhancing student and Olympiad learning through adaptive techniques, focusing on converting Figma designs into optimized React code with Redux Toolkit (RTK) and API integration.",
-    image:
-      myImg2,
+    image: myImg2,
     tags: [
       "Docker",
       "AWS",
@@ -428,13 +417,11 @@ export const projects = [
     date: "September 2024",
     description:
       "Developed and implemented backend APIs to manage dynamic queuing models in OPDs, bed availability, patient admissions, and inventory management of medicines and consumables",
-    image:
-      myImg3,
+    image: myImg3,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "web app",
     github: "https://github.com/Bugbuster2004/Hospital-OPD-SIH",
     // webapp: "https://podstream.netlify.app/",
-   
   },
   {
     id: 1,
@@ -442,8 +429,7 @@ export const projects = [
     date: "July 2024",
     description:
       "Built a real-time GPS tracker using WebSocket to monitor human locations live, integrated with an online chat system for instant communication.",
-    image:
-      myImg4,
+    image: myImg4,
     tags: [
       "React Js",
       "MongoDb",
@@ -462,13 +448,11 @@ export const projects = [
     date: "Jan 2024",
     description:
       "Built a Library Management System with complete CRUD operations for managing books, members, and transactions, enabling seamless tracking of book availability, borrowing, and returns.",
-    image:
-      myImg5,
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    image: myImg5,
+    tags: ["MongoDB", "Express", "Nodejs", "React", "Redux"],
     category: "web app",
     github: "https://github.com/Bugbuster2004/Library_Manag_SYS",
     // webapp: "https://brain-tumor.netlify.app/",
- 
   },
   {
     id: 3,
@@ -478,7 +462,7 @@ export const projects = [
       "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
     image: myImg6,
 
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
+    tags: ["Python", "MongoDB", "Express", "React", "Tailwind", "AWS"],
     category: "web app",
     // github: "https://github.com/rishavchanda/Buckoid-Android-App",
     webapp: "https://conversia-ai-self.vercel.app/#contactus",
@@ -562,4 +546,3 @@ export const projects = [
   //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   // },
 ];
-

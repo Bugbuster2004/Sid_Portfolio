@@ -35,6 +35,13 @@ const Tags = styled.div`
   gap: 8px;
   margin-top: 4px;
 `;
+const Tag = styled.span`
+  background-color: ${({ theme }) => theme.primary};
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+`;
 const Details = styled.div`
   width: 100%;
   display: flex;
@@ -99,15 +106,19 @@ const ProjectCard = ({ project }) => {
   return (
     <Card>
       <Image src={project.image} />
-      <Tags></Tags>
+      <Tags>
+        {project.tags?.map((tag, index) => (
+          <Tag key={index}>{tag}</Tag>
+        ))}
+      </Tags>
       <Details>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>
         <Description>{project.description}</Description>
       </Details>
       <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project.member?.map((member, index) => (
+          <Avatar key={index} src={member.img} />
         ))}
       </Members>
       <Button href={project.github} target="_blank">
