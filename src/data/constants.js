@@ -395,11 +395,7 @@ export const projects = [
       "Wonder is an EdTech platform dedicated to enhancing student and Olympiad learning through adaptive techniques, focusing on converting Figma designs into optimized React code with Redux Toolkit (RTK) and API integration.",
     image: myImg2,
     tags: [
-      "Docker",
       "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
       "CI/CD",
       "React Js",
       "MongoDb",
@@ -459,7 +455,7 @@ export const projects = [
     title: "Conversia",
     date: "November 2024",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+      "Conversia is a chatbot that provides analytics and business management solutions, streamlining operations through token-based requests.",
     image: myImg6,
 
     tags: ["Python", "MongoDB", "Express", "React", "Tailwind", "AWS"],
